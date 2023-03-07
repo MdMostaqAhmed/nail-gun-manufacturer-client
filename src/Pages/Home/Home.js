@@ -3,12 +3,12 @@ import BusinessSummery from './BusinessSummery';
 import Carousel from './Carousel';
 import Footer from './Footer';
 import Review from './Review';
-import Tools from './tools';
+import Tools from './Tools';
 
 const Home = () => {
     return (
         <div>
-            <h1>This is home</h1>
+
             <Carousel></Carousel>
             <Tools></Tools>
             <BusinessSummery></BusinessSummery>

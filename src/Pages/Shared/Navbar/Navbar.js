@@ -4,8 +4,8 @@ import logo from '../../../../src/assets/logo.PNG'
 
 const Navbar = () => {
     return (
-        <div className=' flex justify-center'>
-            <div className="navbar bg-base-100 container">
+        <div className=' flex justify-center bg-slate-400'>
+            <div className="navbar bg-base-400 container flex justify-between">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -22,8 +22,13 @@ const Navbar = () => {
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         <li><Link to="/" className='font-bold text-lg'>Home</Link></li>
+                        <li><Link to="/allProducts" className='font-bold text-lg'>Products</Link></li>
+                        <li><Link to="/blog" className='font-bold text-lg'>Blog</Link></li>
 
-                        <li><a>Item 3</a></li>
+                        <li><Link to="/login" className="font-bold text-lg">Login</Link></li>
+
+                        <li><Link to="/signup" className="font-bold text-lg text-white bg-blue-500">Sign Up</Link></li>
+
                     </ul>
                 </div>
 
