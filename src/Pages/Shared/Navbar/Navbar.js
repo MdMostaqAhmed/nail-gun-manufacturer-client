@@ -27,7 +27,7 @@ const Navbar = () => {
 
                         <li><Link to="/login" className="font-bold text-lg">Login</Link></li>
 
-                        <li><Link to="/signup" className="font-bold text-lg text-white bg-blue-500">Sign Up</Link></li>
+                        <li><Link to="/signUp" className="font-bold text-lg text-white bg-blue-500">Sign Up</Link></li>
 
                     </ul>
                 </div>
