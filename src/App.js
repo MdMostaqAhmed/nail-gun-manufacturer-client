@@ -7,6 +7,7 @@ import AllProducts from './Pages/Products/AllProducts';
 import Blog from './Pages/Blog/Blog';
 import Login from './Pages/Authentication/Login';
 import SignUp from './Pages/Authentication/SignUp';
+import Dashboard from './Pages/Dashboard/Dashboard';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signUp' element={<SignUp></SignUp>}></Route>
+        <Route path='/dashboard' element={<Dashboard></Dashboard>}></Route>
       </Routes>
     </div>
   );

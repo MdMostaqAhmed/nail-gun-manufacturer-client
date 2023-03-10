@@ -1,8 +1,12 @@
 import React from 'react';
+import { useAuthState, useSignOut } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.PNG'
+import auth from '../../firebase.init';
 
 const Navbar = () => {
+    const [user, loading, error] = useAuthState(auth);
+    const [signOut] = useSignOut(auth);
     return (
         <div className=' flex justify-center bg-slate-400'>
             <div className="navbar bg-base-400 container flex justify-between">
@@ -21,13 +25,31 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <li><Link to="/" className='font-bold text-lg'>Home</Link></li>
-                        <li><Link to="/allProducts" className='font-bold text-lg'>Products</Link></li>
-                        <li><Link to="/blog" className='font-bold text-lg'>Blog</Link></li>
+                        <li><Link to="/" className='text-lg'>Home</Link></li>
+                        <li><Link to="/allProducts" className='text-lg'>Products</Link></li>
+                        <li><Link to="/blog" className='text-lg'>Blog</Link></li>
+                        <li>
+                            {
+                                user && <Link to="/dashboard" className='text-lg'>Dashboard</Link>
+                            }
+                        </li>
 
-                        <li><Link to="/login" className="font-bold text-lg">Login</Link></li>
+                        <li>
+                            {
+                                user ? <button
 
-                        <li><Link to="/signUp" className="font-bold text-lg text-white bg-blue-500">Sign Up</Link></li>
+                                    onClick={async () => {
+                                        const success = await signOut();
+                                        localStorage.removeItem('accessToken')
+                                        if (success) {
+                                            alert('You are sign out');
+                                        }
+                                    }}
+                                    className=" text-lg">Sign Out</button> : <Link to="/login" className='text-lg'>Login</Link>
+                            }
+                        </li>
+
+
 
                     </ul>
                 </div>

@@ -33,7 +33,7 @@ const Login = () => {
     }
 
     return (
-        <div className='flex justify-center items-center h-screen'>
+        <div className='flex justify-center items-center h-screen overflow-auto'>
             <div className="card w-96 bg-base-100 shadow-xl">
                 <div className="card-body">
                     <h2 className="text-center 2xl font-bold">Login</h2>
@@ -93,7 +93,7 @@ const Login = () => {
                         {signInError}
                         <input className='btn w-full max-w-xs text-white' type="submit" value="Login" />
                     </form>
-                    <p><small>New to Nail Gun Zone? <Link className='text-primary' to="/signUp">Create A New Account</Link></small></p>
+                    <p><small>New to Nail Gun Zone? <Link className='text-info' to="/signUp">Create A New Account</Link></small></p>
 
                     <div className="divider">OR</div>
                     <button
