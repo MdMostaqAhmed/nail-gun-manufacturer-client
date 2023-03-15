@@ -4,6 +4,7 @@ import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-fireba
 import { useForm } from "react-hook-form";
 import Loading from '../Shared/Loading';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 
 const Login = () => {
@@ -30,6 +31,10 @@ const Login = () => {
     };
 
     let signInError;
+
+    if (user || gUser) {
+        toast.success("Login success")
+    }
 
     if (error || gError) {
         signInError = <p className='text-red-500'>{error?.message || gError?.message}</p>
