@@ -8,7 +8,6 @@ import Tools from './Tools';
 const Home = () => {
     return (
         <div>
-
             <Carousel></Carousel>
             <Tools></Tools>
             <BusinessSummery></BusinessSummery>

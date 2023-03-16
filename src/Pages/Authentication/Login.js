@@ -32,9 +32,7 @@ const Login = () => {
 
     let signInError;
 
-    if (user || gUser) {
-        toast.success("Login success")
-    }
+
 
     if (error || gError) {
         signInError = <p className='text-red-500'>{error?.message || gError?.message}</p>
