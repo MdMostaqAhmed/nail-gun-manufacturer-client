@@ -16,6 +16,7 @@ import MyReview from './Pages/Dashboard/MyReview';
 import AddReview from './Pages/Dashboard/AddReview';
 import MyOrders from './Pages/Dashboard/MyOrders';
 import Products from './Pages/Products/Products';
+import PurchaseItem from './Pages/Products/PurchaseItem';
 
 
 function App() {
@@ -24,7 +25,10 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
+
         <Route path='/allProducts' element={<RequireAuth><Products></Products></RequireAuth>}></Route>
+        <Route path='/purchase/:id' element={<RequireAuth><PurchaseItem /> </RequireAuth>}></Route>
+
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signUp' element={<SignUp></SignUp>}></Route>
