@@ -1,0 +1,62 @@
+[
+    {
+      "name":"BOSTITCH Roofing Nailer",
+      "img":"https://i.ibb.co/SsBLVt4/1Roofing.jpg",
+      "price":"$189",
+      "description":"Upgraded engine and feed system of the sliding nail gun improves drive quality, overall performance, and durability. Dual-door magazine of the siding nailer can be closed multiple ways. The coil siding nailer has an oversized tool-free depth adjustment for proper nail setting. Carbide nose inserts help to protect the nose from wear. Redesigned grip handle for better feel.",
+      "minOrder":"100",
+      "available":"500",
+      "payment":"",
+      "totalSell":""
+    },
+    {
+      "name":"Metabo HPT Roofing Nailer",
+      "img":"https://i.ibb.co/jfzrBbk/2Roofing.jpg",
+      "price":"$249",
+      "description":"Ideal for installation of asphalt roofing shingles and insulation boards. Side loading magazine, convenient and easy for quick replenishment. At only 5.5 Lb., the NV45AB2 is lightweight and well balanced for easy maneuverability. Quick driving system, for maximum efficiency. Tool-less depth of drive adjustment, for precision nailing/flush driving. Help keep nailer from sliding off roof when not in use. Reduces wear. Pneumatic power feed and return, allows tool to operate in the harshest conditions.",
+      "minOrder":"100",
+      "available":"600",
+      "payment":"",
+      "totalSell":""
+    },
+    {
+      "name":"BOSTITCH Coil Roofing Nailer",
+      "img":"https://i.ibb.co/7V1jxkP/3Roofing.jpg",
+      "price":"$229",
+      "description":"The sliding nail gun has lightweight aluminum housing for job site durability. Zero nail lockout feature of the siding nailer eliminates dry firing and indicates when to reload the magazine. Nosepiece of the coil siding nailer features carbide inserts for long-life performance. Aggressive wear guards and skid pads protect the tool from damage on abrasive surfaces. Quick-set adjustable depth guide sets nails to desire depths quickly and conveniently. Patented single-action side load canister for fast, one-step nail loading. Adjustable shingle guide for quick shingle spacing. Over molded grip for comfortable use. Full round driver for more consistent drive quality.",
+      "minOrder":"100",
+      "available":"800",
+      "payment":"",
+      "totalSell":""
+    },
+    {
+      "name":"WEN 61783 Roofing Nailer",
+      "img":"https://i.ibb.co/h2H1zfT/4Roofing.jpg",
+      "price":"$102",
+      "description":"Fire 11-gauge nails (.12 inches) anywhere from 3/4 to 1-3/4 of an inch. Adjustable shingle guide and depth control makes for easy shingle spacing during jobs. Holds up to 120 nails at a time with a quick release for easily fixing jams. Uses pneumatic operating pressure anywhere from 70 to 120 PSI. Includes a blow mold carrying case, oil, and hex wrenches.",
+      "minOrder":"100",
+      "available":"700",
+      "payment":"",
+      "totalSell":""
+    },
+    {
+      "name":"HCN45SP Roof Nail Gun",
+      "img":"https://i.ibb.co/c6gsmts/5Roofing.jpg",
+      "price":"$97",
+      "description":"Drives 3/4-Inch to 1-3/4-Inch full head coil roofing nails. Adjustable shingle guide for quick shingle spacing. Integrated side skid pads prevent the tool from sliding off roof when placed on its side. High-capacity magazine holds up to 120 coil nails at a time; Tool free adjustable depth of drive for consistent and controllable nail fit; 360° tool-free air exhaust. Interchangeable trigger for single shot or bumper fire function.",
+      "minOrder":"100",
+      "available":"900",
+      "payment":"",
+      "totalSell":""
+    },
+    {
+      "name":"",
+      "img":"",
+      "price":"$",
+      "description":"",
+      "minOrder":"",
+      "available":"",
+      "payment":"",
+      "totalSell":""
+    }
+  ]
