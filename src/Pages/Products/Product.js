@@ -1,10 +1,13 @@
 import React from 'react';
-import { Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 
 const Product = ({ product }) => {
+    const navigate = useNavigate();
     const { _id, name, img, description, price, available, minOrder } = product;
     const handlePurchase = (id) => {
-        Navigate(`/purchase/${id}`)
+        navigate(`/purchaseItem/${id}`)
+        console.log(id)
     }
     return (
         <div>
