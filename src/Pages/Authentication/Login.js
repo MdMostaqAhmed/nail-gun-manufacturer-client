@@ -5,11 +5,17 @@ import { useForm } from "react-hook-form";
 import Loading from '../Shared/Loading';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import useToken from '../../Hooks/useToken';
 
 
 const Login = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
     const [signInWithEmailAndPassword, user, loading, error,] = useSignInWithEmailAndPassword(auth);
+
+    const [token] = useToken(gUser);
+    if (token) {
+        navigate(from, { replace: true });
+    }
 
     const { register, formState: { errors }, handleSubmit } = useForm();
 
@@ -21,12 +27,9 @@ const Login = () => {
         navigate(from, { replace: true });
     }
 
-    if (gUser) {
-        console.log('google login success')
-    }
+
 
     const onSubmit = (data) => {
-        console.log(data)
         signInWithEmailAndPassword(data.email, data.password)
     };
 

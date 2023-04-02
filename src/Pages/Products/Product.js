@@ -7,7 +7,6 @@ const Product = ({ product }) => {
     const { _id, name, img, description, price, available, minOrder } = product;
     const handlePurchase = (id) => {
         navigate(`/purchaseItem/${id}`)
-        console.log(id)
     }
     return (
         <div>

@@ -3,9 +3,14 @@ import { useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
+import useAdmin from '../../Hooks/useAdmin';
 
 const PurchaseItem = () => {
     const [user] = useAuthState(auth);
+    const [admin] = useAdmin(user);
+
+
+
     const { id } = useParams();
     const [product, setProduct] = useState([]);
     useEffect(() => {
@@ -228,7 +233,7 @@ const PurchaseItem = () => {
                                 </div>
                             </div>
                             <div className="px-4 py-3 bg-gray-50 text-right sm:px-6">
-                                {user ? (
+                                {admin ? (
                                     <p className="text-xl font-semibold text-red-500">
                                         Purchase is Available For Users only Not For Admin{" "}
                                     </p>
