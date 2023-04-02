@@ -22,6 +22,7 @@ import PurchaseItem from './Pages/Products/PurchaseItem';
 import AboutMe from './Pages/Dashboard/AboutMe';
 import UpdateProfile from './Pages/Dashboard/UpdateProfile';
 import AddMoreInfo from './Pages/Dashboard/AddMoreInfo';
+import ManageUsers from './Pages/Dashboard/ManageUsers';
 
 
 
@@ -68,6 +69,11 @@ function App() {
               element={<AddMoreInfo></AddMoreInfo>}
             ></Route>
           </Route>
+
+          <Route
+            path="manageUsers"
+            element={<ManageUsers></ManageUsers>}
+          ></Route>
 
         </Route>
 
