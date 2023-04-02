@@ -19,6 +19,7 @@ import Products from './Pages/Products/Products';
 
 
 import PurchaseItem from './Pages/Products/PurchaseItem';
+import AboutMe from './Pages/Dashboard/AboutMe';
 
 
 
@@ -43,7 +44,9 @@ function App() {
             <Dashboard />
           </RequireAuth>
         }>
-          <Route index element={<MyProfile></MyProfile>}></Route>
+          <Route path='/dashboard' element={<MyProfile></MyProfile>}>
+            <Route index element={<AboutMe></AboutMe>}></Route>
+          </Route>
           <Route path='addReview' element={<AddReview></AddReview>}></Route>
           <Route path='myOrders' element={<MyOrders></MyOrders>}></Route>
         </Route>
