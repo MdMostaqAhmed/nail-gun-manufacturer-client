@@ -3,32 +3,24 @@ import auth from '../../firebase.init';
 import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
 import { useForm } from "react-hook-form";
 import Loading from '../Shared/Loading';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import useToken from '../../Hooks/useToken';
 
 const SignUp = () => {
+    const { register, formState: { errors }, handleSubmit } = useForm();
+
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
     const [createUserWithEmailAndPassword, user, loading, error,] = useCreateUserWithEmailAndPassword(auth);
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
+    const [token] = useToken(user);
 
-    const { register, formState: { errors }, handleSubmit } = useForm();
 
-    const onSubmit = async (data) => {
-        await createUserWithEmailAndPassword(data.email, data.password)
-        await updateProfile({ displayName: data.name });
-        console.log(data)
-    };
-
-    if (gUser) {
-        console.log('Google success')
-    }
+    const location = useLocation();
+    const navigate = useNavigate();
 
     let signInError;
-
-    if (error || gError || updateError) {
-        signInError = <p className='text-red-500'>{error?.message || gError?.message}</p>
-    }
 
 
     if (loading || gLoading || updating) {
@@ -36,7 +28,44 @@ const SignUp = () => {
     }
 
 
+    if (error || gError || updateError) {
+        signInError = <p className='text-red-500'>{error?.message || gError?.message}</p>
+    }
 
+
+    let from = location.state?.from?.pathname || "/";
+
+    if (token) {
+        navigate(from, { replace: true });
+    }
+
+    // const onSubmit = async (data) => {
+    //     await createUserWithEmailAndPassword(data.email, data.password)
+    //     await updateProfile({ displayName: data.name });
+    //     console.log(data)
+    // };
+
+    const imageStorageKey = "0085b932c68d6801b79baf8ba1ced898";
+
+    const onSubmit = async (data) => {
+        const image = data.image[0];
+        const formData = new FormData();
+        formData.append("image", image);
+        const url = `https://api.imgbb.com/1/upload?key=${imageStorageKey}`;
+        fetch(url, {
+            method: "POST",
+            body: formData,
+        })
+            .then((res) => res.json())
+            .then(async (result) => {
+                if (result.success) {
+                    const img = result.data.url;
+                    await createUserWithEmailAndPassword(data.email, data.password);
+                    await updateProfile({ displayName: data.name, photoURL: img });
+                    toast.success("Congratulations! Account Created Successfully");
+                }
+            });
+    };
 
 
     return (
@@ -44,7 +73,6 @@ const SignUp = () => {
             <div className="card w-96 bg-base-100 shadow-xl">
                 <div className="card-body">
                     <h2 className="text-center 2xl font-bold">Sign Up</h2>
-
 
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <div className="form-control w-full max-w-xs">
@@ -119,6 +147,31 @@ const SignUp = () => {
 
                             </label>
                         </div>
+
+                        <div className="form-control w-full max-w-xs">
+                            <label className="label ">
+                                <span className="label-text">Photo</span>
+                            </label>
+                            <input
+                                type="file"
+                                className="input input-bordered w-full max-w-xs"
+                                {...register("image", {
+                                    required: {
+                                        value: true,
+                                        message: "Image is Required",
+                                    },
+                                })}
+                            />
+                            <label className="label">
+                                {errors.image?.type === "required" && (
+                                    <span className="label-text-alt text-red-500">
+                                        {errors.image.message}
+                                    </span>
+                                )}
+                            </label>
+                        </div>
+
+
                         {signInError}
                         <input className='btn w-full max-w-xs text-white' type="submit" value="Sign Up" />
                     </form>
