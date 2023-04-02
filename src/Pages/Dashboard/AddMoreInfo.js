@@ -1,5 +1,8 @@
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
+import auth from '../../firebase.init';
 
 const AddMoreInfo = () => {
     const {
@@ -8,6 +11,25 @@ const AddMoreInfo = () => {
         handleSubmit,
         reset,
     } = useForm();
+    const [user] = useAuthState(auth);
+    const email = user?.email;
+    const onSubmit = (data) => {
+        fetch(`https://morning-wave-16762.herokuapp.com/user/${email}`, {
+            method: "PUT",
+            headers: {
+                "content-type": "application/json",
+            },
+            body: JSON.stringify(data),
+        })
+            .then((res) => res.json())
+            .then((data) => {
+                if (data.result.acknowledged) {
+                    toast.success("Information Updated Successfully!");
+                    reset();
+                }
+            });
+    };
+
     return (
         <div>
             <form
