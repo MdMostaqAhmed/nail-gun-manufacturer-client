@@ -33,10 +33,10 @@ const MyProfile = () => {
                         About Me
                     </Link>
 
-                    <Link to="/dashboard/myOrders" className="btn btn-accent mr-3">
+                    <Link to="/dashboard/profile/update" className="btn btn-accent mr-3">
                         Update Profile
                     </Link>
-                    <Link to="/dashboard/addReview" className="btn btn-secondary">
+                    <Link to="/dashboard/profile/moreInfo" className="btn btn-secondary">
                         Add More Info
                     </Link>
                 </div>

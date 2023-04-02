@@ -20,6 +20,8 @@ import Products from './Pages/Products/Products';
 
 import PurchaseItem from './Pages/Products/PurchaseItem';
 import AboutMe from './Pages/Dashboard/AboutMe';
+import UpdateProfile from './Pages/Dashboard/UpdateProfile';
+import AddMoreInfo from './Pages/Dashboard/AddMoreInfo';
 
 
 
@@ -46,9 +48,27 @@ function App() {
         }>
           <Route path='/dashboard' element={<MyProfile></MyProfile>}>
             <Route index element={<AboutMe></AboutMe>}></Route>
+            <Route
+              path="update"
+              element={<UpdateProfile></UpdateProfile>}
+            ></Route>
           </Route>
+
           <Route path='addReview' element={<AddReview></AddReview>}></Route>
           <Route path='myOrders' element={<MyOrders></MyOrders>}></Route>
+
+          <Route path="profile" element={<MyProfile></MyProfile>}>
+            <Route index element={<AboutMe></AboutMe>}></Route>
+            <Route
+              path="update"
+              element={<UpdateProfile></UpdateProfile>}
+            ></Route>
+            <Route
+              path="moreInfo"
+              element={<AddMoreInfo></AddMoreInfo>}
+            ></Route>
+          </Route>
+
         </Route>
 
       </Routes>
