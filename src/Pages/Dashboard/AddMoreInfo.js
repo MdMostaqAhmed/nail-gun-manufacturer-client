@@ -14,7 +14,7 @@ const AddMoreInfo = () => {
     const [user] = useAuthState(auth);
     const email = user?.email;
     const onSubmit = (data) => {
-        fetch(`https://morning-wave-16762.herokuapp.com/user/${email}`, {
+        fetch(`http://localhost:5000/user/${email}`, {
             method: "PUT",
             headers: {
                 "content-type": "application/json",
