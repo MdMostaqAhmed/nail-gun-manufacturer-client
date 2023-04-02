@@ -46,6 +46,7 @@ const Dashboard = () => {
                     </h2>
                     <Outlet></Outlet>
                 </div>
+
                 <div className="drawer-side lg:h-auto">
                     <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
                     <ul className="menu p-4 w-48 lg:w-48 bg-primary  text-neutral ">
@@ -66,7 +67,7 @@ const Dashboard = () => {
                                 </li>
                             </>
                         )}
-                        {admin && (
+                        {!admin && (
                             <>
                                 <li>
                                     <CustomLink to="/dashboard/manageUsers">
