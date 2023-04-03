@@ -6,12 +6,7 @@ import ManageUsersRow from './ManageUsersRow';
 
 const ManageUsers = () => {
 
-    const {
-        isLoading,
-        error,
-        data: users,
-        refetch,
-    } = useQuery("users", () =>
+    const { isLoading, error, data: users, refetch, } = useQuery("users", () =>
         fetch("http://localhost:5000/user", {
             method: "GET",
             headers: {

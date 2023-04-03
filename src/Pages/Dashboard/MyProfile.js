@@ -7,8 +7,6 @@ import "./MyProfile.css";
 
 const MyProfile = () => {
     const [user] = useAuthState(auth);
-    console.log(user.email)
-    console.log(user.photoURL)
     const [admin, setAdmin] = useAdmin(user);
     return (
         <div >
