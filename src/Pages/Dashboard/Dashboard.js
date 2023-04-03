@@ -67,7 +67,7 @@ const Dashboard = () => {
                                 </li>
                             </>
                         )}
-                        {!admin && (
+                        {admin && (
                             <>
                                 <li>
                                     <CustomLink to="/dashboard/manageUsers">
