@@ -24,6 +24,7 @@ import UpdateProfile from './Pages/Dashboard/UpdateProfile';
 import AddMoreInfo from './Pages/Dashboard/AddMoreInfo';
 import ManageUsers from './Pages/Dashboard/ManageUsers';
 import AddProduct from './Pages/Dashboard/AddProduct';
+import ManageOrders from './Pages/Dashboard/ManageOrders';
 
 
 
@@ -79,9 +80,13 @@ function App() {
           <Route
             path="addProduct"
             element={
-
               <AddProduct></AddProduct>
-
+            }
+          ></Route>
+          <Route
+            path="manageOrders"
+            element={
+              <ManageOrders></ManageOrders>
             }
           ></Route>
 
