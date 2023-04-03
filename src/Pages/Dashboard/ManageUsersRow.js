@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
+import DeleteUserModal from './DeleteUserModal';
 
 const ManageUsersRow = ({ user, index, refetch }) => {
     const { email } = user;
@@ -46,13 +47,13 @@ const ManageUsersRow = ({ user, index, refetch }) => {
                     </label>
                 </td>
             </tr>
-            {/* {deleteUser && (
-        <DeleteUserModal
-          deleteUser={deleteUser}
-          refetch={refetch}
-          setDeleteUser={setDeleteUser}
-        ></DeleteUserModal>
-      )} */}
+            {deleteUser && (
+                <DeleteUserModal
+                    deleteUser={deleteUser}
+                    refetch={refetch}
+                    setDeleteUser={setDeleteUser}
+                ></DeleteUserModal>
+            )}
         </>
     );
 };
