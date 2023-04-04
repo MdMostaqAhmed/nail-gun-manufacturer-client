@@ -62,8 +62,9 @@ const Dashboard = () => {
                                 <li>
                                     <CustomLink to="/dashboard/myOrders">My Orders</CustomLink>
                                 </li>
+
                                 <li>
-                                    <CustomLink to="/dashboard/myReview">Add Review</CustomLink>
+                                    <CustomLink to="/dashboard/review">Add Review</CustomLink>
                                 </li>
                             </>
                         )}

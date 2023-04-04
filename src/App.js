@@ -61,6 +61,7 @@ function App() {
           <Route path='addReview' element={<AddReview></AddReview>}></Route>
           <Route path='myOrders' element={<MyOrders></MyOrders>}></Route>
           <Route path="payment/:id" element={<Payment></Payment>}></Route>
+          <Route path="review" element={<MyReview></MyReview>}></Route>
 
           <Route path="profile" element={<MyProfile></MyProfile>}>
             <Route index element={<AboutMe></AboutMe>}></Route>
