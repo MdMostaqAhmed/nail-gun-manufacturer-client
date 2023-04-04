@@ -4,6 +4,7 @@ import auth from '../../firebase.init';
 import useAdmin from '../../Hooks/useAdmin';
 import { Link, useNavigate } from 'react-router-dom';
 import { signOut } from 'firebase/auth';
+import UserDeleteOrderModal from './UserDeleteOrderModal';
 
 const MyOrders = () => {
     const [orders, setOrders] = useState([]);
@@ -126,7 +127,12 @@ const MyOrders = () => {
                         </div>
                     </div>
 
-
+                    {deleteOrder && (
+                        <UserDeleteOrderModal
+                            deleteOrder={deleteOrder}
+                            setDeleteOrder={setDeleteOrder}
+                        ></UserDeleteOrderModal>
+                    )}
                 </div>
             )}
         </>
