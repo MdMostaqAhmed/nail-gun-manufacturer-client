@@ -1,6 +1,5 @@
 [
     {
-      "_id":"1",
       "name":"BOSTITCH Roofing Nailer",
       "img":"https://i.ibb.co/SsBLVt4/1Roofing.jpg",
       "price":"189",
@@ -11,7 +10,6 @@
       "totalSell":""
     },
     {
-      "_id":"2",
       "name":"Metabo HPT Roofing Nailer",
       "img":"https://i.ibb.co/jfzrBbk/2Roofing.jpg",
       "price":"249",
@@ -22,7 +20,6 @@
       "totalSell":""
     },
     {
-      "_id":"3",
       "name":"BOSTITCH Coil Roofing Nailer",
       "img":"https://i.ibb.co/7V1jxkP/3Roofing.jpg",
       "price":"229",
@@ -33,7 +30,6 @@
       "totalSell":""
     },
     {
-      "_id":"4",
       "name":"WEN 61783 Roofing Nailer",
       "img":"https://i.ibb.co/h2H1zfT/4Roofing.jpg",
       "price":"102",
@@ -44,7 +40,6 @@
       "totalSell":""
     },
     {
-      "_id":"5",
       "name":"HCN45SP Roof Nail Gun",
       "img":"https://i.ibb.co/c6gsmts/5Roofing.jpg",
       "price":"97",
@@ -55,14 +50,104 @@
       "totalSell":""
     },
     {
-      "_id":"6",
-      "name":"",
-      "img":"",
-      "price":"",
-      "description":"",
-      "minOrder":"",
-      "available":"",
+      "name":"Pneumatic Brad Nailer",
+      "img":"https://i.ibb.co/qMYRChV/1Brad.jpg",
+      "price":"69",
+      "description":"NEU MASTER pneumatic 2 inch 2 in 1 nail gun /staple gun, that drives 18 Gauge Brad Nails 5/8 inch up to 2 inch in length, and drives 1/4” crown staples 5/8 inch up to 1-5/8 inch.Multiple tool-free settings make this nail gun easy to use. 1000 pcs 18GA free brad nails and staples, includes 400 pcs 2” + 400 pcs 1-1/4” nails, 200 pcs 1/4” narrow crown,staples. Come with carrying BMC case, safety glasses, lubricating oil bottle, 2 Allen wrenches. Proper setting of nails/staples. 360° rotatable exhaust keep contaminants away from work. Tool-free jam clears jammed nails quickly. A Quick release 100-nails/staples capacity magazine.Sequential style trigger. A nail/staple view window avoid dry fire dent mark left on working surface. A rubber grip handle for comfortbale use experience. Lightweight & durability, easy to carry and have long life.",
+      "minOrder":"100",
+      "available":"300",
+      "payment":"",
+      "totalSell":""
+    },
+    {
+      "name":"NEU MASTER NTC0040 ",
+      "img":"https://i.ibb.co/5r5JVPM/2Brad.jpg",
+      "price":"70",
+      "description":"The electric nail gun/staple gun doesn't need compressors or hoses, which makes this brad nailer easy to use. The nailer/stapler is ideal for Softwood DIY projects such as carpentry, picture framing, door or window molding installation, pet house DIY, while NOT recommended for quarter round, baseboard, drywall installation, roofing or flooring. The 18 gauge brad nailer is designed with On/Off power switch, safety contact and an easily squeezed trigger for safety usage and to avoid accidental triggering. The upholstery staple gun is equipped with ergonomic soft-grip handle for reducing worker fatigue. And its non-Marring rubber nose provides a complete finish for projects. This 18 gauge brad nailer is designed with an adjustable power function for Light-duty projects.",
+      "minOrder":"150",
+      "available":"400",
+      "payment":"",
+      "totalSell":""
+    },
+    {
+      "name":"Bielmeier 20V Cordless Brad Nailer",
+      "img":"https://i.ibb.co/30xD9wk/3Brad.jpg",
+      "price":"100",
+      "description":"20V MAX 2000mAh lithium Cordless brad nailer has no cords, no limits! A comparable corded tool is more powerful, but they need to use power cords, gas, or compressors. The cordless Bielmeier brad nailer can be used in places where is no electric power. It is lighter and more convenient to use. Our electric nail gun can fire 2000 nails after full charge. The cordless nail gun takes the latest impact drive technology and ensures a stable shooting, better penetration strength. Drives a range of 18 gauge brad nails from acrown staple f. It features a quick-release loading magazine on the bottom of the gun for fast and easy installation of staples and nails..Bielmeier 20V brad nailer, not only front LED light, and the cordless brad nailer weighs only 4.8 lbs, which provides you with unmatched access into tight and dark spaces. Non-slip rubber handle provides extra comfort when working.",
+      "minOrder":"100",
+      "available":"400",
+      "payment":"",
+      "totalSell":""
+    },
+    {
+      "name":"DEWALT Brad Nailer",
+      "img":"https://i.ibb.co/T0LSVkW/4Brad.jpg",
+      "price":"150",
+      "description":"Long life maintenance-free motor to keep from staining the work surface. Tool-free depth-of-drive adjustment with detents for proper setting of nail heads. Tool-free jam release mechanism for easy nail removal. Rear exhaust to keep contaminates away from work. Drives 18 gauge nails from 5/8 in. to 2 in. length. Adjustable belt hook allows the tool to be kept near the user. carrying case, and owners manual. Removable non-marring nose tip with on tool storage. Integrated rubber grip for improved comfort. Sequential style trigger.",
+      "minOrder":"100",
+      "available":"500",
+      "payment":"",
+      "totalSell":""
+    },
+    {
+      "name":"WEN 61721 Brad Nailer",
+      "img":"https://i.ibb.co/vQFh6H9/5Brad.jpg",
+      "price":"120",
+      "description":"Remember when you could build whatever you wanted? Nail nails and fasten fasteners with the WEN 18-Gauge 2-Inch Pneumatic Brad Nailer. Fire 18-gauge brads anywhere from 3/8 to 2 inches in length. Our spring-loaded magazine makes for quick and easy reloads with enough space to hold up to 106 nails. The lightweight body combined with the rubber-lined handle limit fatigue during long days on the job. Operating pressure ranges from 60 to 115 PSI with the nailer consuming 0.028 CFM of air per nail at 88 PSI. The 1/4-inch NPT air inlet allows for quick connection to your favorite air compressor. Adjust the firing depth of the nailer with the simple turn of the depth adjustment wheel. ",
+      "minOrder":"150",
+      "available":"300",
+      "payment":"",
+      "totalSell":""
+    },
+    {
+      "name":"BOSTITCH Roofing Nailer",
+      "img":"https://i.ibb.co/SsBLVt4/1Roofing.jpg",
+      "price":"200",
+      "description":"Upgraded engine and feed system of the sliding nail gun improves drive quality, overall performance, and durability. Dual-door magazine of the siding nailer can be closed multiple ways. The coil siding nailer has an oversized tool-free depth adjustment for proper nail setting. Carbide nose inserts help to protect the nose from wear. Redesigned grip handle for better feel.",
+      "minOrder":"100",
+      "available":"350",
+      "payment":"",
+      "totalSell":""
+    },
+    {
+      "name":"Metabo HPT Roofing Nailer",
+      "img":"https://i.ibb.co/jfzrBbk/2Roofing.jpg",
+      "price":"300",
+      "description":"Ideal for installation of asphalt roofing shingles and insulation boards. Side loading magazine, convenient and easy for quick replenishment. At only 5.5 Lb., the NV45AB2 is lightweight and well balanced for easy maneuverability. Quick driving system, for maximum efficiency. Tool-less depth of drive adjustment, for precision nailing/flush driving. Help keep nailer from sliding off roof when not in use. Reduces wear. Pneumatic power feed and return, allows tool to operate in the harshest conditions.",
+      "minOrder":"100",
+      "available":"450",
+      "payment":"",
+      "totalSell":""
+    },
+    {
+      "name":"BOSTITCH Coil Roofing Nailer",
+      "img":"https://i.ibb.co/7V1jxkP/3Roofing.jpg",
+      "price":"250",
+      "description":"The sliding nail gun has lightweight aluminum housing for job site durability. Zero nail lockout feature of the siding nailer eliminates dry firing and indicates when to reload the magazine. Nosepiece of the coil siding nailer features carbide inserts for long-life performance. Aggressive wear guards and skid pads protect the tool from damage on abrasive surfaces. Quick-set adjustable depth guide sets nails to desire depths quickly and conveniently. Patented single-action side load canister for fast, one-step nail loading. Adjustable shingle guide for quick shingle spacing. Over molded grip for comfortable use. Full round driver for more consistent drive quality.",
+      "minOrder":"100",
+      "available":"500",
+      "payment":"",
+      "totalSell":""
+    },
+    {
+      "name":"WEN 61783 Roofing Nailer",
+      "img":"https://i.ibb.co/h2H1zfT/4Roofing.jpg",
+      "price":"150",
+      "description":"Fire 11-gauge nails (.12 inches) anywhere from 3/4 to 1-3/4 of an inch. Adjustable shingle guide and depth control makes for easy shingle spacing during jobs. Holds up to 120 nails at a time with a quick release for easily fixing jams. Uses pneumatic operating pressure anywhere from 70 to 120 PSI. Includes a blow mold carrying case, oil, and hex wrenches.",
+      "minOrder":"120",
+      "available":"400",
+      "payment":"",
+      "totalSell":""
+    },
+    {
+      "name":"HCN45SP Roof Nail Gun",
+      "img":"https://i.ibb.co/c6gsmts/5Roofing.jpg",
+      "price":"150",
+      "description":"Drives 3/4-Inch to 1-3/4-Inch full head coil roofing nails. Adjustable shingle guide for quick shingle spacing. Integrated side skid pads prevent the tool from sliding off roof when placed on its side. High-capacity magazine holds up to 120 coil nails at a time; Tool free adjustable depth of drive for consistent and controllable nail fit; 360° tool-free air exhaust. Interchangeable trigger for single shot or bumper fire function.",
+      "minOrder":"100",
+      "available":"300",
       "payment":"",
       "totalSell":""
     }
+    
   ]

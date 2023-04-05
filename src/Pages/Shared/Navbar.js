@@ -22,7 +22,10 @@ const Navbar = () => {
                             <li><a>Item 3</a></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl"><img src={logo} className="w-48" alt="Nail Gun Zone" /></a>
+                    <a href="https://nail-gun-zone.web.app/"
+                        className="btn btn-ghost normal-case text-xl">
+                        <img src={logo} className="w-48" alt="Nail Gun Zone" />
+                    </a>
                 </div>
 
                 <div className="navbar-center hidden lg:flex">
@@ -30,6 +33,7 @@ const Navbar = () => {
                         <li><Link to="/" className='text-lg'>Home</Link></li>
                         <li><Link to="/allProducts" className='text-lg'>Products</Link></li>
                         <li><Link to="/blog" className='text-lg'>Blog</Link></li>
+                        <li><Link to="/portFolio" className='text-lg'>My Portfolio</Link></li>
                         <li>
                             {
                                 user && <Link to="/dashboard" className='text-lg'>Dashboard</Link>

@@ -27,6 +27,9 @@ import AddProduct from './Pages/Dashboard/AddProduct';
 import ManageOrders from './Pages/Dashboard/ManageOrders';
 import Payment from './Pages/Dashboard/Payment/Payment';
 import MangeProducts from './Pages/Dashboard/MangeProducts';
+import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
+import RequireAdmin from './Pages/Authentication/RequireAdmin';
+import NotFound from './Pages/NotFound/NotFound';
 
 
 
@@ -42,6 +45,7 @@ function App() {
 
 
         <Route path='/blog' element={<Blog></Blog>}></Route>
+        <Route path='/portFolio' element={<MyPortfolio></MyPortfolio>}></Route>
 
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signUp' element={<SignUp></SignUp>}></Route>
@@ -78,19 +82,27 @@ function App() {
 
           <Route
             path="manageUsers"
-            element={<ManageUsers></ManageUsers>}
+            element={
+              <RequireAdmin>
+                <ManageUsers></ManageUsers>
+              </RequireAdmin>
+            }
           ></Route>
 
           <Route
             path="addProduct"
             element={
-              <AddProduct></AddProduct>
+              <RequireAdmin>
+                <AddProduct></AddProduct>
+              </RequireAdmin>
             }
           ></Route>
           <Route
             path="manageOrders"
             element={
-              <ManageOrders></ManageOrders>
+              <RequireAdmin>
+                <ManageOrders></ManageOrders>
+              </RequireAdmin>
             }
           ></Route>
 
@@ -98,12 +110,15 @@ function App() {
             path="manageProducts"
             element={
 
-              <MangeProducts></MangeProducts>
+              <RequireAdmin>
+                <MangeProducts></MangeProducts>
+              </RequireAdmin>
 
             }
           ></Route>
 
         </Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
 
       </Routes>
       <ToastContainer />
