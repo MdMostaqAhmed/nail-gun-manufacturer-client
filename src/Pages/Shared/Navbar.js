@@ -34,6 +34,7 @@ const Navbar = () => {
                         <li><Link to="/allProducts" className='text-lg'>Products</Link></li>
                         <li><Link to="/blog" className='text-lg'>Blog</Link></li>
                         <li><Link to="/portFolio" className='text-lg'>My Portfolio</Link></li>
+                        <li><Link to="/contact" className='text-lg'>Contact US</Link></li>
                         <li>
                             {
                                 user && <Link to="/dashboard" className='text-lg'>Dashboard</Link>

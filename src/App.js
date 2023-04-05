@@ -30,6 +30,7 @@ import MangeProducts from './Pages/Dashboard/MangeProducts';
 import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
 import RequireAdmin from './Pages/Authentication/RequireAdmin';
 import NotFound from './Pages/NotFound/NotFound';
+import ContactUs from './Pages/ContactUs/ContactUs';
 
 
 
@@ -119,6 +120,7 @@ function App() {
 
         </Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
+        <Route path="/contact" element={<ContactUs></ContactUs>}></Route>
 
       </Routes>
       <ToastContainer />
