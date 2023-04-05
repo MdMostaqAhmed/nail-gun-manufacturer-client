@@ -14,7 +14,7 @@ const AddMoreInfo = () => {
     const [user] = useAuthState(auth);
     const email = user?.email;
     const onSubmit = (data) => {
-        fetch(`http://localhost:5000/user/${email}`, {
+        fetch(`https://nail-gun-manufacturer-server-production.up.railway.app/user/${email}`, {
             method: "PUT",
             headers: {
                 "content-type": "application/json",

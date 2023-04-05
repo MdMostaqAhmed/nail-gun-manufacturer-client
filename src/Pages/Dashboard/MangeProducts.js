@@ -5,7 +5,7 @@ const MangeProducts = () => {
     const [products, setProducts] = useState([]);
     const [deleteProduct, setDeleteProduct] = useState(null);
     useEffect(() => {
-        fetch("http://localhost:5000/products", {
+        fetch("https://nail-gun-manufacturer-server-production.up.railway.app/products", {
             headers: {
                 authorization: `Bearer ${localStorage.getItem("accessToken")}`,
             },

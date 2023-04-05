@@ -5,7 +5,7 @@ const ManageOrders = () => {
     const [orders, setOrders] = useState([]);
     const [deleteOrder, setDeleteOrder] = useState(null);
     useEffect(() => {
-        fetch("http://localhost:5000/orders", {
+        fetch("https://nail-gun-manufacturer-server-production.up.railway.app/orders", {
             headers: {
                 authorization: `Bearer ${localStorage.getItem("accessToken")}`,
             },
@@ -18,7 +18,7 @@ const ManageOrders = () => {
         const payment = {
             status: "Shipped",
         };
-        fetch(`http://localhost:5000/ship/${_id}`, {
+        fetch(`https://nail-gun-manufacturer-server-production.up.railway.app/ship/${_id}`, {
             method: "PATCH",
             headers: {
                 "content-type": "application/json",

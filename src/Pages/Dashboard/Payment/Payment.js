@@ -11,7 +11,7 @@ const stripePromise = loadStripe("pk_test_51MGJZ4I27wlGZ96QJr6aHsRuoa9DAfGUmMAax
 
 const Payment = () => {
     const { id } = useParams();
-    const url = `http://localhost:5000/orders/${id}`;
+    const url = `https://nail-gun-manufacturer-server-production.up.railway.app/orders/${id}`;
     const { data: order, isLoading } = useQuery(["order", id], () =>
         fetch(url, {
             method: "GET",

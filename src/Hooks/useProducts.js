@@ -5,7 +5,7 @@ const useProducts = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
         setIsLoading(true)
-        fetch(`http://localhost:5000/products`)
+        fetch(`https://nail-gun-manufacturer-server-production.up.railway.app/products`)
             .then(res => res.json())
             .then(data => setProducts(data));
         setIsLoading(false);

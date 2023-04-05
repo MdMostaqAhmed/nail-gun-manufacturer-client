@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 
 const DeleteProductModal = ({ deleteProduct, setDeleteProduct }) => {
     const handleDelete = (id) => {
-        fetch(`http://localhost:5000/products/${id}`, {
+        fetch(`https://nail-gun-manufacturer-server-production.up.railway.app/products/${id}`, {
             method: "DELETE",
             headers: {
                 authorization: `Bearer ${localStorage.getItem("accessToken")}`,

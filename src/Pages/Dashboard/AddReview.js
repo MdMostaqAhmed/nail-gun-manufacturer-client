@@ -22,7 +22,7 @@ const AddReview = () => {
             rating: rating,
             user: user?.email,
         };
-        fetch("http://localhost:5000/reviews", {
+        fetch("https://nail-gun-manufacturer-server-production.up.railway.app/reviews", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(review),

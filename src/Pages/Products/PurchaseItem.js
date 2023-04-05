@@ -14,7 +14,7 @@ const PurchaseItem = () => {
     const { id } = useParams();
     const [product, setProduct] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${id}`)
+        fetch(`https://nail-gun-manufacturer-server-production.up.railway.app/products/${id}`)
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [id])
@@ -57,7 +57,7 @@ const PurchaseItem = () => {
             user: userName,
             address: address,
         };
-        fetch("http://localhost:5000/orders", {
+        fetch("https://nail-gun-manufacturer-server-production.up.railway.app/orders", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(booking),

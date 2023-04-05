@@ -38,7 +38,7 @@ const AddProduct = () => {
                         img: img,
                     };
                     //Send Product To DataBase
-                    fetch("http://localhost:5000/products", {
+                    fetch("https://nail-gun-manufacturer-server-production.up.railway.app/products", {
                         method: "POST",
                         headers: {
                             "content-type": "application/json",

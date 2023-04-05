@@ -16,7 +16,7 @@ const MyOrders = () => {
     useEffect(() => {
         if (user) {
             fetch(
-                `http://localhost:5000/order?userEmail=${user.email}`,
+                `https://nail-gun-manufacturer-server-production.up.railway.app/order?userEmail=${user.email}`,
                 {
                     method: "GET",
                     headers: {

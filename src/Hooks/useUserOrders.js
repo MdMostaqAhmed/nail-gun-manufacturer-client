@@ -12,7 +12,7 @@ const useUserOrders = () => {
     useEffect(() => {
         if (user) {
             fetch(
-                `http://localhost:5000/orders?userEmail=${user.email}`,
+                `https://nail-gun-manufacturer-server-production.up.railway.app/orders?userEmail=${user.email}`,
                 {
                     method: "GET",
                     headers: {

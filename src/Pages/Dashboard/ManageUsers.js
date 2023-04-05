@@ -7,7 +7,7 @@ import ManageUsersRow from './ManageUsersRow';
 const ManageUsers = () => {
 
     const { isLoading, error, data: users, refetch, } = useQuery("users", () =>
-        fetch("http://localhost:5000/user", {
+        fetch("https://nail-gun-manufacturer-server-production.up.railway.app/user", {
             method: "GET",
             headers: {
                 authorization: `Bearer ${localStorage.getItem("accessToken")}`,

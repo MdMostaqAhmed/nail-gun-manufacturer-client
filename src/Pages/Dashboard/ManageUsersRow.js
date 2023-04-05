@@ -6,7 +6,7 @@ const ManageUsersRow = ({ user, index, refetch }) => {
     const { email } = user;
     const [deleteUser, setDeleteUser] = useState(null);
     const makeAdmin = () => {
-        fetch(`http://localhost:5000/user/admin/${email}`, {
+        fetch(`https://nail-gun-manufacturer-server-production.up.railway.app/user/admin/${email}`, {
             method: "PUT",
             headers: {
                 authorization: `Bearer ${localStorage.getItem("accessToken")}`,

@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 
 const DeleteUserModal = ({ deleteUser, setDeleteUser, refetch }) => {
     const handleDelete = (id) => {
-        fetch(`http://localhost:5000/users/${id}`, {
+        fetch(`https://nail-gun-manufacturer-server-production.up.railway.app/users/${id}`, {
             method: "DELETE",
             headers: {
                 authorization: `Bearer ${localStorage.getItem("accessToken")}`,
