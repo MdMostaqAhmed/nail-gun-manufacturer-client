@@ -62,7 +62,7 @@ const Reviews = () => {
                 {reviews
                     .slice(0)
                     .reverse()
-                    .map((review, i) => (
+                    .map((review) => (
                         <SwiperSlide>
                             <Review key={review._id} review={review}></Review>
                         </SwiperSlide>
