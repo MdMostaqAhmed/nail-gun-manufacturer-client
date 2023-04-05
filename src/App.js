@@ -26,6 +26,7 @@ import ManageUsers from './Pages/Dashboard/ManageUsers';
 import AddProduct from './Pages/Dashboard/AddProduct';
 import ManageOrders from './Pages/Dashboard/ManageOrders';
 import Payment from './Pages/Dashboard/Payment/Payment';
+import MangeProducts from './Pages/Dashboard/MangeProducts';
 
 
 
@@ -90,6 +91,15 @@ function App() {
             path="manageOrders"
             element={
               <ManageOrders></ManageOrders>
+            }
+          ></Route>
+
+          <Route
+            path="manageProducts"
+            element={
+
+              <MangeProducts></MangeProducts>
+
             }
           ></Route>
 
