@@ -15,11 +15,7 @@ const BusinessSummery = () => {
                         <h3 className="text-xl text-info font-bold">Countries</h3>
                     </div>
                     <div
-                        data-aos="flip-left"
-                        data-aos-offset="200"
-                        data-aos-delay="50"
-                        data-aos-duration="1000"
-                        data-aos-easing="ease-in-out"
+
                         className="shadow-xl reason-item border-4 rounded-xl  flex flex-col justify-center items-center"
                     >
                         <img width={80} src="https://i.ibb.co/51twWyP/921347.png" alt="" />
@@ -29,11 +25,6 @@ const BusinessSummery = () => {
                         <h3 className="text-xl text-info font-bold">Clients</h3>
                     </div>
                     <div
-                        data-aos="flip-left"
-                        data-aos-offset="200"
-                        data-aos-delay="50"
-                        data-aos-duration="1000"
-                        data-aos-easing="ease-in-out"
                         className="shadow-xl reason-item border-4 rounded-xl  flex flex-col justify-center items-center"
                     >
                         <img width={80} src="https://i.ibb.co/DRV4Zb8/1589592.png" alt="" />
@@ -43,11 +34,6 @@ const BusinessSummery = () => {
                         <h3 className="text-xl text-info font-bold">Annual Revenue</h3>
                     </div>
                     <div
-                        data-aos="flip-left"
-                        data-aos-offset="200"
-                        data-aos-delay="50"
-                        data-aos-duration="1000"
-                        data-aos-easing="ease-in-out"
                         className="shadow-xl reason-item border-4 rounded-xl  flex flex-col justify-center items-center"
                     >
                         <img width={80} src="https://i.ibb.co/0r1W5zR/settings.png" alt="" />

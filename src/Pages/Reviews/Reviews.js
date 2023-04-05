@@ -1,4 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from "react";
+
+import "./styles.css";
+
+import "swiper/css";
+
 
 const Reviews = () => {
     const [reviews, setReviews] = useState([]);
@@ -7,41 +12,13 @@ const Reviews = () => {
             .then((res) => res.json())
             .then((data) => setReviews(data));
     }, []);
-    const [swiperRef, setSwiperRef] = useState(null);
 
-    let appendNumber = 4;
-    let prependNumber = 1;
 
-    const prepend2 = () => {
-        swiperRef.prependSlide([
-            '<div className="swiper-slide">Slide ' + --prependNumber + "</div>",
-            '<div className="swiper-slide">Slide ' + --prependNumber + "</div>",
-        ]);
-    };
+    return
+    <div>
 
-    const prepend = () => {
-        swiperRef.prependSlide(
-            '<div className="swiper-slide">Slide ' + --prependNumber + "</div>"
-        );
-    };
+    </div>
 
-    const append = () => {
-        swiperRef.appendSlide(
-            '<div className="swiper-slide">Slide ' + ++appendNumber + "</div>"
-        );
-    };
-
-    const append2 = () => {
-        swiperRef.appendSlide([
-            '<div className="swiper-slide">Slide ' + ++appendNumber + "</div>",
-            '<div className="swiper-slide">Slide ' + ++appendNumber + "</div>",
-        ]);
-    };
-    return (
-        <div>
-
-        </div>
-    );
 };
 
 export default Reviews;
