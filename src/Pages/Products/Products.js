@@ -6,10 +6,10 @@ import Product from './Product';
 const Products = () => {
 
     const [products, isLoading] = useProducts([]);
-    
+
     return (
         <div className='container mx-auto'>
-            <h2>All Products {products.length}</h2>
+
             {isLoading ? (
                 <Loading></Loading>
             ) : (

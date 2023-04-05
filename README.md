@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Let's Talk About My Project `Nail GunZone`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+let's Have a Look [Nail GunZone](https://nail-gun-zone.web.app).
 
-## Available Scripts
+### `Client Site `
 
-In the project directory, you can run:
+Client Site Repository Link: [Git-Hub](https://github.com/MdMostaqAhmed/nail-gun-manufacturer-client)
 
-### `npm start`
+### `Server Site`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Server Site Repository Link: [Git-Hub](https://github.com/MdMostaqAhmed/nail-gun-manufacturer-server)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Live-Site-Link:[https://reyco-automotive.web.app/](https://nail-gun-zone.web.app)
 
-### `npm test`
+Author: [Md Mostaq Ahmed](https://www.linkedin.com/in/md-mostaq-ahmed-76680320b/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Learn More About My Project:
 
-### `npm run build`
+This web site is Mainly Nail Gun related, in this site you will get the Following Features :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- On the Navbar there are total 7 nav items (Home,Products,Blog,ContactUs,MyPortfolio,Dashboard,Log in) after successfully log in a new nav item Dashboard will add.
+- By clicking Home you will back to Homepage, by clicking products you will go to the all products section , on blog you Will see a Accordion With Some Q&A , on Contact Us You will See a contact form log in You could Log in or Create Account(And also Social Log In `Google` Enable ) .
+- - On DashBoard there will two types of view on for `Admin` another one is for `User`. If a normal user log in he will see total 3 routes in Dashboard name : `My Profile` (You Can see your Profile and Uodate Info) , `My Order` you can see all your orders , `Add Review `(You CAn Give Review)
+- - If `Admin` Login he will have some extra Powers , in dashboard he will see My Profile(Where he can update and see his Profile),`Manage Order ` he can mange all orders, `Manage Product` (he can manage all products), `Add Product` (He can add new product) , `Manage user `(He can see all users list and make someone Admin or delete)
+- In home Page you will 6 Products from All the Products and a`Buy Now` button by Clicking That button you Could See the detail of the product and and order a product . and gather in my order section from My order section you can confirm payment by giving your card infos.after payment it will change status Paid waiting for shipment
+- admin can manage products if a order is paid he can send it to shipment , and can remove unpaid orders
+- 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- At the Bottom You Will Get a Footer
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Tools and Technology I Used in this Project
 
-### `npm run eject`
+- React app
+  - React Router
+    - Link
+- Styling
+  - Some Vanila CSS
+  - React tailwind
+    - Daisy UI
+- Authentication
+  - Firebase
+    - React firebase hook
+- Icons
+  - hero Icon
+  - FontAwesome Icon
+- Accordion
+  - React Accordion
+- Modal
+  - Daisy Modal
+- Animation
+- - React Counter
+- - React Animation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### `Payment`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Stripe
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### `Data Base`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- MongoDB
 
-## Learn More
+### `Server`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Railway
